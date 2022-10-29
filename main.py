@@ -1,22 +1,33 @@
 from fastapi import FastAPI
+import os
+import subprocess
 
+
+root_msg = f'Welcome to Emerging Technologies'
+
+info = {'info': 'Welcome to ET Info'};
+
+release_notes = [
+        {'date': '10-29-22', 'msg':'Playing with Fast API', 'link': 'et-dev.firstam.com'},
+        {'date': '08-03-22', 'msg':'Weegle Prod v1.0 Release', 'link': 'et-dev.firstam.com'},
+        {'date': '08-03-22', 'msg':'Testing', 'link': 'et-dev.firstam.com'},
+        ]
+
+
+
+#--------------------------
+# API
+#--------------------------
 app = FastAPI()
-
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return root_msg
 
 @app.get("/info")
 async def root():
-    return {"message": "This is some info"}
+    return info
 
 @app.get("/release")
 async def root():
-    return {
-            "date": "10-28-22",
-            "title": "This is a title",
-            "message": "This is a message",
-            "link": "https://google.com",
-            }
-
+    return release_notes
