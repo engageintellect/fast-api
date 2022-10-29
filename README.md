@@ -23,7 +23,7 @@ git clone <repo name>
 
 2. install dependencies
 ```
-cd fast_api && pip install -r requirements.txt
+cd fast_api && sudo pip install -r requirements.txt
 ```
 
 3. run code (dev)
