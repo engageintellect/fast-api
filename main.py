@@ -1,6 +1,4 @@
 from fastapi import FastAPI
-import os
-import subprocess
 
 
 root_msg = f'Welcome to Emerging Technologies'
