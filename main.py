@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from data import *
 
-
 #--------------------------
 # API
 #--------------------------
@@ -12,18 +11,22 @@ async def root():
     return root_msg
 
 @app.get("/api/info")
-async def root():
+async def getInfo():
     return info
 
 @app.get("/api/release")
-async def root():
+async def getRelease():
     return release_notes
 
 @app.get("/api/projects")
-async def root():
+async def getProjects():
     return projects
 
 @app.get("/api/products")
-async def root():
+async def getProducts():
     return products
+
+@app.get("/api/about")
+async def getAbout():
+    return about
 

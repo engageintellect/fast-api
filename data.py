@@ -22,3 +22,5 @@ products = [
 	{'date': '00-00-22', 'title':'Product 3', 'description': 'Connecting people and technology.', 'link': 'et-dev.firstam.com'},
 	{'date': '00-00-22', 'title':'Product 4', 'description': 'Connecting people and technology.', 'link': 'et-dev.firstam.com'},
 ]
+
+about = 'About us...'
