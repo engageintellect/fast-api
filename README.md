@@ -35,12 +35,19 @@ uvicorn main:app --reload
 ```
 uvicorn main:app --host localhost --port 3000
 ```
+To keep a persistent connection, and to refesh during updates, add the ```--reload``` switch.
+
+```
+uvicorn main:app --host localhost --port 3000 --reload
+```
 
 
 4. test endpoints
 * [/](http://localhost:3000)
-* [/info](http://localhost:3000/info)
-* [/release](http://localhost:3000/release)
+* [/api/info](http://localhost:3000/api/info)
+* [/api/release](http://localhost:3000/api/release)
+* [/api/projects](http://localhost:3000/api/release)
+* [/api/products](http://localhost:3000/api/release)
 
 OR
 
