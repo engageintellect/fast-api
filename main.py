@@ -14,6 +14,10 @@ async def root():
 async def getInfo():
     return info
 
+@app.get("/api/about")
+async def getAbout():
+    return about
+
 @app.get("/api/release")
 async def getRelease():
     return release_notes
@@ -25,8 +29,3 @@ async def getProjects():
 @app.get("/api/products")
 async def getProducts():
     return products
-
-@app.get("/api/about")
-async def getAbout():
-    return about
-
