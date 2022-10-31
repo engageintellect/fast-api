@@ -45,12 +45,14 @@ uvicorn main:app --host localhost --port 3000 --reload
 4. test endpoints
 * [/](http://localhost:3000)
 * [/api/info](http://localhost:3000/api/info)
-* [/api/release](http://localhost:3000/api/release)
-* [/api/projects](http://localhost:3000/api/release)
-* [/api/products](http://localhost:3000/api/release)
+* [/api/releases](http://localhost:3000/api/releases)
+* [/api/projects](http://localhost:3000/api/projects)
+* [/api/products](http://localhost:3000/api/products)
 
 OR
 
 * ```curl http://localhost:3000```
 * ```curl http://localhost:3000/info```
-* ```curl http://localhost:3000/release```
+* ```curl http://localhost:3000/releases```
+* ```curl http://localhost:3000/projects```
+* ```curl http://localhost:3000/products```

@@ -19,8 +19,8 @@ async def getInfo():
 async def getAbout():
     return about
 
-@app.get("/api/release")
-async def getRelease():
+@app.get("/api/releases")
+async def getReleases():
     return release_notes
 
 @app.get("/api/projects")
