@@ -7,6 +7,22 @@ from data import *
 
 app = FastAPI()
 
+
+class Record:
+    def __init__ (self, title, artist, genre):
+        self.title = title
+        self.artist = artist
+        self.genre = genre
+
+    def getRecord(self):
+        return self
+
+
+x = Record('dark side of the moon', 'pink floyd', 'rock')
+
+
+
+
 @app.get("/")
 async def root():
     return root_msg
@@ -30,3 +46,7 @@ async def getProjects():
 @app.get("/api/products")
 async def getProducts():
     return products
+
+@app.get("/api/testing")
+async def getTesting():
+    return x.getRecord()
